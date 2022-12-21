@@ -35,7 +35,7 @@ class RuleAdmin(ModelAdmin):
             return " ".join([u.pattern for u in urls])
         else:
             return None
-    allowed_urls.short_description = 'disallowed'
+    disallowed_urls.short_description = 'disallowed'
 
 
 modeladmin_register(RuleAdmin)
